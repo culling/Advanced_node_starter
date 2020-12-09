@@ -1,10 +1,12 @@
 import Server from './Server';
-import * as routes from './routes';
+import { ProjectRoute } from "./routes";
+import { config } from './config';
+const port = config.port;
 const server = new Server(
   [
-    new routes.api.v1.ProjectsRoute()
+    new ProjectRoute()
   ],
-  5000,
+  port,
 );
 
 server.listen();

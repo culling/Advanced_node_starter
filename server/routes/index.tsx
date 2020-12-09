@@ -1,4 +1,7 @@
-import * as api from './api';
-export {
-    api
+// Imports
+import ProjectRoute from './project/ProjectRoute';
+
+export{
+    // Export Routes
+    ProjectRoute
 }
