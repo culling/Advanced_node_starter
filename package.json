@@ -8,6 +8,7 @@
     "@babel/preset-react": "^7.12.7",
     "body-parser": "^1.19.0",
     "express": "^4.16.4",
+    "react-dom": "^17.0.1",
     "ts-node": "^9.0.0",
     "tsc": "^1.20150623.0",
     "typescript": "^3.1.6"
@@ -22,11 +23,13 @@
     "@types/node": "^10.12.10",
     "babel-jest": "^26.5.2",
     "cypress": "^5.4.0",
-    "jest": "^26.5.3"
+    "jest": "^26.5.3",
+    "nodemon": "^2.0.6"
   },
   "scripts": {
     "start": "node -r ts-node/register ./server",
-    "start:fe": "cd ./client && npm run dev:src",
+    "dev:fe": "cd ./client && npm run dev:src",
+    "dev:be": "nodemon",
     "test": "jest",
     "cypress": "./node_modules/.bin/cypress open"
   },
